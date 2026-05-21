@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/privacy.html/tiktokGNgwa0cJn9qtu6pggGgWHQViku1s7G6K.txt",
+      "destination": "/tiktokGNgwa0cJn9qtu6pggGgWHQViku1s7G6K.txt"
+    },
+    {
+      "source": "/:path*/tiktokGNgwa0cJn9qtu6pggGgWHQViku1s7G6K.txt",
+      "destination": "/tiktokGNgwa0cJn9qtu6pggGgWHQViku1s7G6K.txt"
+    }
+  ]
+}
