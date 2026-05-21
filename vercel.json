@@ -6,8 +6,16 @@
       "destination": "/tiktokGNgwa0cJn9qtu6pggGgWHQViku1s7G6K.txt"
     },
     {
+      "source": "/terms.html/tiktokoTLGSXbxQiB1Q0ca3L7cpFzlFhwxDerI.txt",
+      "destination": "/tiktokoTLGSXbxQiB1Q0ca3L7cpFzlFhwxDerI.txt"
+    },
+    {
       "source": "/:path*/tiktokGNgwa0cJn9qtu6pggGgWHQViku1s7G6K.txt",
       "destination": "/tiktokGNgwa0cJn9qtu6pggGgWHQViku1s7G6K.txt"
+    },
+    {
+      "source": "/:path*/tiktokoTLGSXbxQiB1Q0ca3L7cpFzlFhwxDerI.txt",
+      "destination": "/tiktokoTLGSXbxQiB1Q0ca3L7cpFzlFhwxDerI.txt"
     }
   ]
 }
