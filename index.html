@@ -240,17 +240,149 @@
         }
 
         footer a { color: var(--primary); text-decoration: none; }
+
+        /* Navigation Bar */
+        .navbar {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 0.85rem 1.5rem;
+        }
+
+        .navbar-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .navbar-logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--text);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .navbar-logo .logo-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--primary) 0%, #7c3aed 100%);
+            color: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+        }
+
+        .navbar-menu {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 640px) {
+            .navbar-menu {
+                display: none;
+            }
+        }
+
+        .nav-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-link:hover {
+            color: var(--primary);
+        }
+
+        .btn-home {
+            display: inline-flex;
+            align-items: center;
+            background: var(--primary);
+            color: var(--white);
+            border: none;
+            border-radius: 99px;
+            padding: 0.5rem 1.25rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(79, 70, 229, 0.25);
+            transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-home:hover {
+            background: var(--primary-dark);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.35);
+        }
+
+        .btn-home:active {
+            transform: translateY(0);
+        }
+
+        .hero-btn {
+            display: inline-flex;
+            align-items: center;
+            background: var(--white);
+            color: var(--primary);
+            border: none;
+            border-radius: 99px;
+            padding: 0.75rem 1.75rem;
+            font-size: 1rem;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s, color 0.2s, background-color 0.2s;
+        }
+
+        .hero-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+            background: var(--primary-light);
+            color: var(--primary-dark);
+        }
     </style>
 </head>
 <body>
 
-<div class="hero">
-    <div class="logo">
-        <div class="logo-icon">✦</div>
-        XPost
+<header class="navbar">
+    <div class="navbar-container">
+        <a href="index.html" class="navbar-logo">
+            <div class="logo-icon">✦</div>
+            <span>XPost</span>
+        </a>
+        <nav class="navbar-menu">
+            <a href="privacy.html" class="nav-link">Privacy Policy</a>
+            <a href="terms.html" class="nav-link">Terms of Service</a>
+        </nav>
+        <a href="https://xpost-three.vercel.app/" class="btn-home" target="_blank" rel="noopener noreferrer">
+            Trang chủ chính thức
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 4px; vertical-align: middle;"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+        </a>
     </div>
+</header>
+
+<div class="hero">
     <h1>All Your Social Media,<br>One Powerful Dashboard</h1>
     <p>Schedule, publish, and manage content across TikTok, Facebook, Instagram, and X from a single, unified platform.</p>
+    <div style="margin: 0.5rem 0 2rem;">
+        <a href="https://xpost-three.vercel.app/" class="hero-btn" target="_blank" rel="noopener noreferrer">
+            Truy cập XPost App
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px; vertical-align: middle;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+    </div>
     <div class="badge-row">
         <span class="badge">🎵 TikTok</span>
         <span class="badge">📘 Facebook</span>
